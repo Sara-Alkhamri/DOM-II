@@ -35,10 +35,10 @@ mainNav.addEventListener('dblclick', function(e){
 })
 
 //  keydown
-const goImg = document.querySelector(".intro img");
-goImg.addEventListener("blclick", function(e) {
-    console.log("Image clicked");
-})
+// const goImg = document.querySelector(".intro img");
+// goImg.addEventListener("blclick", function(e) {
+//     console.log("Image clicked");
+// })
 
 
 const logo = document.querySelector(".logo-heading");
@@ -48,10 +48,10 @@ logo.addEventListener("click", function() {
 
 //  wheel
 // let logoText = document.querySelector(".logo-heading");
-// logoText.addEventListener("wheel", function(event) {
-//     // logoText.style.fontSize = "3rem";
-//     logoText.style.color = "17A2B8";
-    
+// logo.addEventListener("wheel", function() {
+//     ogoText.style.fontSize = "3rem";
+//     logo.style.color = "#17A2B8";
+//     event.stopPropagation();
     
 // }) 
 
@@ -67,14 +67,17 @@ logo.addEventListener("click", function() {
 
 
 //  resize
-
+window.addEventListener("resize", (e) => {
+    alert("Resizing!");
+})
 
 
 //  select
-// const par = document.querySelectorAll("text-content");
+// const par = document.querySelectorAll(".text-content p");
 // par.forEach(function(i){
-//     i.addEventListener("select", function(e){
-//         style.textColor = "17A2B8"
+//     i.addEventListener("click", function(){
+//       //console.log("test");
+//       par.style.fontSize = "2rem";
 //     })
 // })
 
