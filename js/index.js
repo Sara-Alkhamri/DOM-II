@@ -21,8 +21,21 @@ for (let i = 0; i < nav.length; i++) {
 
 
 //  keydown
+// const img = document.querySelector("img-content");
+// window.addEventListener("keydown", function(e) {
+//     console.log("Image clicked")
+//     event.preventDefault();
+// })
 
+// const imgCont = document.querySelector("img-content");
+// imgCont.addEventListener("keydown", (e) => {
+//     console.log("Image Clicked");
+// })
 
+// const logo = document.querySelector("logo-heading");
+// logo.addEventListener("click", function() {
+//     console.log("Logo Clicked!")
+// })
 
 //  wheel
 
@@ -46,7 +59,9 @@ for (let i = 0; i < nav.length; i++) {
 
 
 //  scroll
-
+window.addEventListener("scroll", (e) => {
+    console.log("Scrolling!")
+})
 
 //  select
 
