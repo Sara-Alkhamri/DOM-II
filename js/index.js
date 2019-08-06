@@ -1,4 +1,13 @@
 // Your code goes here
+//  scroll
+window.addEventListener("scroll", (e) => {
+    console.log("Scrolling!")
+})
+
+//  load
+window.addEventListener("load", (e) => {
+    console.log("Loading..")
+})
 
 
 // mouseover
@@ -19,37 +28,38 @@ for (let i = 0; i < nav.length; i++) {
     }) 
 }
 
+//  dblclick
+const mainNav = document.querySelector('.nav-container')
+mainNav.addEventListener('dblclick', function(e){
+    mainNav.style.backgroundColor = 'lightgray';
+})
 
 //  keydown
-// const img = document.querySelector("img-content");
-// window.addEventListener("keydown", function(e) {
-//     console.log("Image clicked")
-//     event.preventDefault();
-// })
+const goImg = document.querySelector(".intro img");
+goImg.addEventListener("blclick", function(e) {
+    console.log("Image clicked");
+})
 
-// const imgCont = document.querySelector("img-content");
-// imgCont.addEventListener("keydown", (e) => {
-//     console.log("Image Clicked");
-// })
 
-// const logo = document.querySelector("logo-heading");
-// logo.addEventListener("click", function() {
-//     console.log("Logo Clicked!")
-// })
+const logo = document.querySelector(".logo-heading");
+logo.addEventListener("click", function() {
+    console.log("Logo Clicked!")
+})
 
 //  wheel
+// let logoText = document.querySelector(".logo-heading");
+// logoText.addEventListener("wheel", function(event) {
+//     // logoText.style.fontSize = "3rem";
+//     logoText.style.color = "17A2B8";
+    
+    
+// }) 
 
 
 
 
 //  drag / drop
 
-
-
-//  load
-window.addEventListener("load", (e) => {
-    console.log("Loading..")
-})
 
 
 //  focus
@@ -60,11 +70,6 @@ window.addEventListener("load", (e) => {
 
 
 
-//  scroll
-window.addEventListener("scroll", (e) => {
-    console.log("Scrolling!")
-})
-
 //  select
 // const par = document.querySelectorAll("text-content");
 // par.forEach(function(i){
@@ -73,8 +78,3 @@ window.addEventListener("scroll", (e) => {
 //     })
 // })
 
-//  dblclick
-const mainNav = document.querySelector('.nav-container')
-mainNav.addEventListener('dblclick', function(event){
-    mainNav.style.backgroundColor = 'lightgray';
-})
