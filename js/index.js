@@ -47,7 +47,9 @@ for (let i = 0; i < nav.length; i++) {
 
 
 //  load
-
+window.addEventListener("load", (e) => {
+    console.log("Loading..")
+})
 
 
 //  focus
@@ -64,6 +66,15 @@ window.addEventListener("scroll", (e) => {
 })
 
 //  select
-
+// const par = document.querySelectorAll("text-content");
+// par.forEach(function(i){
+//     i.addEventListener("select", function(e){
+//         style.textColor = "17A2B8"
+//     })
+// })
 
 //  dblclick
+const mainNav = document.querySelector('.nav-container')
+mainNav.addEventListener('dblclick', function(event){
+    mainNav.style.backgroundColor = 'lightgray';
+})
