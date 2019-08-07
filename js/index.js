@@ -49,16 +49,6 @@ logo.addEventListener("wheel", function() {
 }) 
 
 
-
-
-//  drag / drop
-
-
-
-//  focus
-
-
-
 //  resize
 window.addEventListener("resize", (e) => {
     alert("Resizing!");
@@ -66,11 +56,12 @@ window.addEventListener("resize", (e) => {
 
 
 //  select
-// const par = document.querySelectorAll(".text-content p");
-// par.forEach(function(i){
-//     i.addEventListener("click", function(){
-//       //console.log("test");
-//       par.style.fontSize = "2rem";
-//     })
-// })
+const par = document.querySelectorAll(".text-content");
+par.forEach(function(i){
+    i.addEventListener("click", function(){
+      //console.log("test");
+      event.target.style.fontSize = "2rem";
+      event.target.style.color = "#17A2B8";
+    })
+})
 
