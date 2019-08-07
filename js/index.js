@@ -41,19 +41,12 @@ goImg.addEventListener("click", function(e) {
 })
 
 
-const logo = document.querySelector(".logo-heading");
-logo.addEventListener("click", function() {
-    console.log("Logo Clicked!")
-})
-
 //  wheel
-// let logoText = document.querySelector(".logo-heading");
-// logo.addEventListener("wheel", function() {
-//     ogoText.style.fontSize = "3rem";
-//     logo.style.color = "#17A2B8";
-//     event.stopPropagation();
-    
-// }) 
+const logo = document.querySelector(".logo-heading");
+logo.addEventListener("wheel", function() {
+    logo.style.fontSize = "5rem";
+    logo.style.color = "#17A2B8";
+}) 
 
 
 
