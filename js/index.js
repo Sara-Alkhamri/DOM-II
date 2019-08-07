@@ -35,10 +35,10 @@ mainNav.addEventListener('dblclick', function(e){
 })
 
 //  keydown
-// const goImg = document.querySelector(".intro img");
-// goImg.addEventListener("blclick", function(e) {
-//     console.log("Image clicked");
-// })
+const goImg = document.querySelector(".intro img");
+goImg.addEventListener("click", function(e) {
+    goImg.style.display = "none";
+})
 
 
 const logo = document.querySelector(".logo-heading");
