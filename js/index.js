@@ -11,7 +11,7 @@ window.addEventListener("load", (e) => {
 })
 
 
-// mouseover
+// click
 const nav = document.querySelectorAll(".nav-link");
 for (let i = 0; i < nav.length; i++) {
     nav[i].addEventListener("click", (e) => {
@@ -53,7 +53,7 @@ logo.addEventListener("wheel", function() {
 
 //  resize
 window.addEventListener("resize", (e) => {
-    alert("Resizing!");
+    console.log("Resizing!");
 })
 
 
@@ -66,4 +66,21 @@ par.forEach(function(i){
       event.target.style.color = "#17A2B8";
     })
 })
+
+const contP = document.querySelectorAll('.content-pick');
+contP.forEach(function(i){
+    i.addEventListener('click', function(event){
+        console.log('One moment please!')
+        
+    })
+});
+
+const dest = document.querySelectorAll('.destination');
+dest.forEach(function(i){
+    i.addEventListener('click', function(event){
+        event.target.style.fontSize = "2rem";
+        event.stopPropagation();
+    })
+});
+
 
