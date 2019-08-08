@@ -7,15 +7,17 @@ window.addEventListener("scroll", (e) => {
 //  load
 window.addEventListener("load", (e) => {
     console.log("Loading..")
+    
 })
 
 
 // mouseover
 const nav = document.querySelectorAll(".nav-link");
 for (let i = 0; i < nav.length; i++) {
-    nav[i].addEventListener("mouseover", (e) => {
+    nav[i].addEventListener("click", (e) => {
         nav[i].style.color = "#17A2B8";
         nav[i].style.fontSize = "2rem";
+        event.preventDefault();
     })
 }
 
